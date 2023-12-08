@@ -1,12 +1,3 @@
-bl_info = {
-    "name": "Spring Bones",
-    "author": "Artell",
-    "version": (0, 9),
-    "blender": (2, 80, 0),
-    "location": "Properties > Bones",
-    "description": "Add a spring dynamic effect to a single/multiple bones",    
-    "category": "Animation"}
-
 
 import bpy, time
 from bpy.app.handlers import persistent
