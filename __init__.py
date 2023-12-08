@@ -1,8 +1,8 @@
 bl_info = {
     "name": "Spring Bones",
     "author": "Artell",
-    "version": (0, 9),
-    "blender": (2, 8, 0),
+    "version": (0, 9, 1),
+    "blender": (4, 0, 0),
     "location": "Properties > Bones",
     "description": "Add a spring dynamic effect to a single/multiple bones",    
     "category": "Animation"}

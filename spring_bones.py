@@ -666,12 +666,11 @@ class SB_OT_select_bone(bpy.types.Operator):
         data_bone = get_pose_bone(self.bone_name).bone
         bpy.context.active_object.data.bones.active = data_bone
         data_bone.select = True
-        for i, l in enumerate(data_bone.layers):
-            if l == True and bpy.context.active_object.data.layers[i] == False:
-                bpy.context.active_object.data.layers[i] = True
-                #print("enabled layer", i)
-            
-            
+        
+        # blender 4.0 replaces layers with bone collections
+        for collection in data_bone.collections:
+            collection.is_visible = True
+        
         #get_pose_bone(self.bone_name).select = True
             
         return {'FINISHED'}  
